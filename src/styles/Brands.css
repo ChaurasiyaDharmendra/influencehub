@@ -1,0 +1,109 @@
+.brands{
+    padding:40px 8%;
+    background:white;
+    text-align:center;
+}
+
+.brands h3{
+    font-size:20px;
+    font-weight:700;
+    color:#333;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.brands h3::after{
+    content:"";
+    width:70px;
+    height:3px;
+    background:#ff6b00;
+    display:block;
+    margin:10px auto 0;
+    border-radius:20px;
+}
+
+.brands-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:45px;
+    flex-wrap:wrap;
+}
+
+.brands-row span{
+    font-size:32px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.brands-row span:hover{
+    transform:translateY(-4px) scale(1.05);
+}
+
+/* Brand Colors */
+
+.tata{
+    color:#1f4e9e;
+}
+
+.samsung{
+    color:#1428A0;
+    letter-spacing:1px;
+}
+
+.boat{
+    color:#222;
+    font-weight:500;
+}
+
+.zomato{
+    color:#000;
+    font-weight:700;
+}
+
+.fastrack{
+    color:#111;
+    font-style:italic;
+    font-weight:600;
+}
+
+.mamaearth{
+    color:#00a884;
+}
+
+.noise{
+    color:#111;
+}
+
+.philips{
+    color:#0057b8;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .brands-row{
+        gap:25px;
+    }
+
+    .brands-row span{
+        font-size:24px;
+    }
+}
+
+@media(max-width:480px){
+
+    .brands{
+        padding:30px 5%;
+    }
+
+    .brands-row{
+        gap:18px;
+    }
+
+    .brands-row span{
+        font-size:20px;
+    }
+}

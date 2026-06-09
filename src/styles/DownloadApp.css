@@ -1,0 +1,156 @@
+.download{
+  padding:80px 8%;
+  background:#fff7f2;
+}
+
+.download-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:50px;
+}
+
+.download-left{
+  flex:1;
+}
+
+.download-left img{
+  width:100%;
+  max-width:350px;
+  border-radius:20px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.1);
+}
+
+.download-center{
+  flex:1.5;
+}
+
+.download-tag{
+  color:#ff6b00;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:3px;
+}
+
+.download-center h2{
+  font-size:55px;
+  font-weight:800;
+  margin:15px 0;
+  line-height:1.2;
+  color:#111;
+}
+
+.download-center h2 span{
+  color:#ff6b00;
+}
+
+.download-center p{
+  font-size:20px;
+  color:#666;
+  margin-bottom:30px;
+  line-height:1.6;
+}
+
+.download-buttons{
+  display:flex;
+  gap:15px;
+}
+
+.download-buttons button{
+  border:none;
+  background:#ff6b00;
+  color:white;
+  padding:15px 30px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.download-buttons button:hover{
+  background:#e65c00;
+  transform:translateY(-3px);
+}
+
+.download-right{
+  flex:1;
+  text-align:center;
+}
+
+.qr-box{
+  width:180px;
+  height:180px;
+  background:white;
+  border:3px solid #ff6b00;
+  border-radius:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.qr-box img{
+  width:150px;
+  height:150px;
+  object-fit:contain;
+}
+
+.download-right p{
+  margin-top:15px;
+  font-size:16px;
+  color:#555;
+  font-weight:600;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+  .download-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .download-center h2{
+    font-size:40px;
+  }
+
+  .download-buttons{
+    justify-content:center;
+  }
+
+  .download-left img{
+    max-width:280px;
+  }
+}
+
+@media(max-width:576px){
+
+  .download-center h2{
+    font-size:32px;
+  }
+
+  .download-center p{
+    font-size:16px;
+  }
+
+  .download-buttons{
+    flex-direction:column;
+  }
+
+  .download-buttons button{
+    width:100%;
+  }
+
+  .qr-box{
+    width:150px;
+    height:150px;
+  }
+
+  .qr-box img{
+    width:120px;
+    height:120px;
+  }
+}

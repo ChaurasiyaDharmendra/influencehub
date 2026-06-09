@@ -1,0 +1,176 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 8%;
+  background:#ffffff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+.logo h2{
+  font-size:34px;
+  font-weight:800;
+  letter-spacing:0.5px;
+  color:#222;
+}
+
+.logo h2 span{
+  color:#ff6b00;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  list-style:none;
+  gap:35px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#333;
+  font-size:16px;
+  font-weight:600;
+  transition:0.3s;
+  position:relative;
+}
+
+.nav-links a:hover{
+  color:#ff6b00;
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:2px;
+  background:#ff6b00;
+  left:0;
+  bottom:-5px;
+  transition:0.3s;
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+
+.nav-buttons{
+  display:flex;
+  gap:15px;
+}
+
+.login-btn{
+  background:#fff;
+  color:#333;
+  border:2px solid #ececec;
+  padding:12px 28px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.login-btn:hover{
+  border-color:#ff6b00;
+  color:#ff6b00;
+}
+
+.signup-btn{
+  background:#ff6b00;
+  color:white;
+  border:none;
+  padding:12px 28px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+  box-shadow:0 8px 20px rgba(255,107,0,0.25);
+}
+
+.signup-btn:hover{
+  transform:translateY(-2px);
+  background:#e65c00;
+}
+
+@media(max-width:992px){
+
+  .navbar{
+    padding:15px 5%;
+  }
+
+  .nav-links{
+    gap:20px;
+  }
+
+  .nav-links a{
+    font-size:14px;
+  }
+
+  .login-btn,
+  .signup-btn{
+    padding:10px 18px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+    padding:15px 5%;
+  }
+
+  .logo h2{
+    font-size:30px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .nav-buttons{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .logo h2{
+    font-size:26px;
+    text-align:center;
+  }
+
+  .nav-links{
+    gap:10px;
+  }
+
+  .nav-links a{
+    font-size:13px;
+  }
+
+  .nav-buttons{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .login-btn,
+  .signup-btn{
+    width:100%;
+  }
+
+}
